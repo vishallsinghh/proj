@@ -56,7 +56,7 @@ function run(){
 
 function checking(){
   const immilogo = document.querySelector('#logo-immi img');
-console.log("immilogo",immilogo);
+// console.log("immilogo",immilogo);
 immilogo.onclick = function(){
   location.href = "index.html";
 }
@@ -85,4 +85,22 @@ window.smoothScroll = function(target) {
   }
   // start scrolling
   scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+
+function contactUs(){
+  var input = document.querySelector('.form-contactUs input');
+  var input1 = document.querySelector('.form-contactUs #email');
+  var input2 = document.querySelector('.form-contactUs #phone');
+  
+  
+  console.log('working')
+  input.value='';
+  input1.value='';
+  input2.value='';
+  swal({
+    title: "We have Recorded Your Response!",
+    text: "Kindly, wait for us to reach you back or contact us",
+    icon: "success",
+    button: "Great",
+  });
 }

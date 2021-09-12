@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 /* UNIVERSAL */
+@media screen and (max-width:480px){
+    .footer-logo{
+      transform: translateX(0px) !important;
+    }
+    .footer-logo-parent{
+        display: flex;
+        justify-content: center;
+    }
+    .fw-info .social{
+        padding-left: 40px;
+    }
+  }
 .row{
     margin-top: 20px;
 }
@@ -8,8 +22,10 @@
     text-transform: capitalize;
     padding-bottom: 20px;
 }
-.section-title p{
-    
+.section-titleh2{
+    font-size: 2em;
+    font-weight: 300;
+    padding-bottom: 10px;
 }
 #modal-logo{
     height: 200px;
@@ -17,7 +33,13 @@
     top: -110px;
     left: -110px;
 }
-
+.card{
+    border: none !important;
+}
+.footer-logo{
+    transform: translateX(70px);
+    height: 250px;
+}
 /* INDEX PAGE */
 .latest-update{
     display: flex;
@@ -37,10 +59,19 @@
     padding: 20px;
     border-radius: 10px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.grid-text{
+    width: 80%;
+    padding-left: 20px;
+}
+.grid-text h3{
+    text-transform: uppercase;
+}
+.grid-text p{
+    text-align: left;
+    line-height: 20px;
 }
 /* FOOTER */
 .footer-top-area{
@@ -121,6 +152,30 @@
   }
   .breadcumb-area-businessVisa{
     background: rgba(0, 0, 0, 0) url("../img/home/BusinessVisa.jpg") repeat fixed center center;
+    padding: 275px 0 51px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .breadcumb-area-australia{
+    background: rgba(0, 0, 0, 0) url("../img/home/Australia-1.jpg") repeat fixed center center;
+    padding: 275px 0 51px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .breadcumb-area-usa{
+    background: rgba(0, 0, 0, 0) url("../img/home/america1.jpg") repeat fixed center center;
+    padding: 275px 0 51px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .breadcumb-area-europe{
+    background: rgba(0, 0, 0, 0) url("../img/home/europe-1.jpg") repeat fixed center center;
+    padding: 275px 0 51px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .breadcumb-area-work{
+    background: rgba(0, 0, 0, 0) url("../img/home/work123.jpg") repeat fixed center center;
     padding: 275px 0 51px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -306,10 +361,10 @@
 }
 
 /* TESTIMONIAL */
-.testimonial{
-    background: rgb(157,47,23);
-    background: linear-gradient(90deg, rgba(157,47,23,1) 9%, rgba(25,1,8,1) 100%);}
-
+.testimonial {
+    background: rgb(157, 47, 23);
+    background: linear-gradient(90deg, #77ac3a 9%, #cddc39 100%);
+  }
 /* CAREGIVER */
 .caregiver li{
     list-style-type: disc !important;
@@ -327,3 +382,87 @@
     padding: 5px;
     line-height: 20px;
 }
+
+/* CONTACT US */
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    background: rgb(157,47,23);
+    background: linear-gradient(90deg, rgba(157,47,23,1) 9%, rgba(25,1,8,1) 100%);
+    padding: 18px;
+    margin-right: 50px;
+    border-radius: 5px;
+    font-family: 'Open Sans';
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.contact-details h2{
+    color: #fff;
+    font-size: 2.4em;
+    line-height: 35px;
+    border-bottom: 1px solid;
+    padding-bottom: 15px;
+}
+.contact-details p,b{
+    width: 90%;
+    color: #fff;
+    margin-top: 20px;
+}
+.enquiry-related{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid;
+    padding: 5px;
+}
+.form-contactUs{
+    font-size: 1.2em;
+    padding: 10px;
+}
+.form-contactUs label{
+    padding: 10px;
+    padding-left: 0px;
+}
+.form-contactUs input{
+    border: none;
+    border-bottom: 1px solid;
+    padding: 5px;
+    font-size: 0.9em;
+    outline: none;
+}
+.submit-btn{
+    margin-top: 10px !important;
+    padding: 10px 30px !important;
+    border: none !important;
+    background-color: rgb(157,47,23);
+    transition: 0.3s all;
+    color: white;
+    border-radius: 5px;
+}
+.submit-btn:hover{
+    background:#b8261c ;
+    cursor: pointer;
+}
+html {
+    overflow-x: hidden;
+  }
+  .content-service1 {
+    border-bottom: 0;
+  }
+  .testimonial4_slide img {
+    border-radius: 8px;
+  }
+  @media (max-width: 1090px) {
+    .testimonial4_slide img {
+      height: 100%;
+      margin-left: 0;
+    }
+    .noneImg {
+      display: none;
+    }
+  }
+  .swiper-slide::before {
+    background: linear-gradient(
+      118deg,
+      rgba(255, 0, 0, 1) 0%,
+      rgb(0 0 0 / 48%) 100%
+    );
+  }

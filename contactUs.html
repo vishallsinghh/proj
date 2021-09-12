@@ -6,7 +6,7 @@
 <head>
     <!--- Basic Page Needs  -->
     <meta charset="utf-8">
-    <title>Contact || Consult Vita</title>
+    <title>Contact Us || Consult Vita</title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="keywords" content="">
@@ -116,7 +116,7 @@
     </header>
     <!-- header-end -->
     <!-- breadcumb-area-start -->
-    <div class="breadcumb-area bg-with-black">
+    <div class="breadcumb-area bg-with-gblack">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -133,7 +133,51 @@
     </div>
     <!-- breadcumb-area-end -->
     <!-- contact-send-msg-area-start -->
-    <div class="contact-send-msg-area">
+    <div class="container" style="padding-top: 60px;">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+          <div class="contact-details">
+            <h2>IMMIGLOBAL SERVICES</h2>
+            <p><b>Address:<br/> 1.</b> Unit No. A 302 3rd Floor Rajhans Plaza Indirapuram,
+              Delhi NCR<br/>
+              <b>2.</b> Rajendra Nagar
+              <br/><br/>
+              <b>Email:</b>  rajeev.tiwari@immiglobal.com<br/><br/>
+              <b>Phone: </b>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12 col-12">
+          <h1 style="font-weight: 200; ">CONTACT US</h1>
+          <form class="form-contactUs">
+            <div class="form-group">
+              <label for="formGroupExampleInput">Name</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Email Address</label>
+              <input id='email' type="email" class="form-control" id="formGroupExampleInput2" placeholder="Enter Your Email">
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Phone No.</label>
+              <input id='phone' type="tel" class="form-control" id="formGroupExampleInput2" placeholder="Phone No.">
+            </div>
+            <div class="form-group">
+              <label>Enquiry Related To </label>
+                <select class="enquiry-related" >
+                  <option selected='study' value="study">Study Visa</option>
+                  <option value="Work Visa">Work Visa</option>
+                  <option value="Express Entry">Express Entry</option>
+                  <option value="Permanent Visa">Permanent Visa</option>
+                  <option value="Other">Other...</option>
+                </select>
+            </div>
+            <input class="submit-btn" type="button" value="Contact" onclick="contactUs()"/>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="contact-send-msg-area">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 col-12">
@@ -181,7 +225,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- contact-send-msg-area-end -->
     <!-- contact-details-area-start -->
     <div class="page-contact-details contact-details-area">
@@ -373,6 +417,9 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/theme.js"></script>
+    <script src="js/new.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </body>
 
 
